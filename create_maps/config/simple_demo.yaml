@@ -1,0 +1,14 @@
+grid_map_visualization:  # 定义一个名为grid_map_visualization的配置
+  ros__parameters:  # ROS参数配置部分
+    grid_map_topic: /grid_map  # 定义网格地图的ROS话题名称
+    grid_map_visualizations: [elevation_points, elevation_grid]  # 定义需要可视化的网格地图类型列表
+    elevation_points:  # 定义elevation_points的可视化配置
+      type: point_cloud  # 可视化类型为点云
+      params:  # 参数配置
+        layer: elevation  # 使用的图层为elevation
+    elevation_grid:  # 定义elevation_grid的可视化配置
+      type: occupancy_grid  # 可视化类型为占用网格
+      params:  # 参数配置
+        layer: elevation  # 使用的图层为elevation
+        data_min: 0.08  # 数据的最小值
+        data_max: -0.16  # 数据的最大值

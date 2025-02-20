@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>create_maps</name>
+  <version>0.0.0</version>
+  <description>The create_maps package</description>
+
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <maintainer email="jiaxier@todo.todo">jiaxier</maintainer>
+
+  <!-- One license tag required, multiple allowed, one license per tag -->
+  <license>TODO</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>filters</depend>
+  <depend>geometry_msgs</depend>
+  <depend>grid_map_core</depend>
+  <depend>grid_map_filters</depend>
+  <depend>grid_map_ros</depend>
+  <depend>grid_map_visualization</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+  <depend>hybrid_astar_searcher</depend>
+  <depend>ompl</depend>
+  <depend>decomp_ros_msgs</depend>
+  <depend>decomp_ros_utils</depend>
+  <depend>decomp_rviz_plugins</depend>
+  <depend>decomp_util</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
